@@ -1,0 +1,70 @@
+.pageHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.container {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 54px;
+}
+
+.logo {
+  padding: 5px 0;
+
+  a {
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: #111;
+  }
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  flex-basis: auto;
+}
+
+.navButtons {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navItem {
+  /* держим под ссылку */
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.4rem 0.75rem;
+  border-radius: 8px;
+  color: #34495e;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s ease, color 0.2s ease;
+
+  &:hover {
+    color: #1f2d3a;
+    background-color: rgba(0, 0, 0, 0.04);
+    transform: scale(1.04);
+  }
+}
+
+.active {
+  color: #1f2d3a;
+  background-color: rgba(100, 108, 255, 0.14);
+}
