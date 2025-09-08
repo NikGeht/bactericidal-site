@@ -61,7 +61,7 @@ export const Product = () => {
                         columns={1}
                         icon="check"
                         variant="solid"
-                        color="#2f8f5b"
+                        color="var(--accent-advantages)"
                     />
                 </section>
 
@@ -72,7 +72,7 @@ export const Product = () => {
                         columns={1}
                         icon="circle-check"
                         variant="regular"
-                        color="#2a6fbb"
+                        color="var(--accent-composition)"
                     />
                 </section>
                 <section className={styles.featuresSection}>
@@ -82,7 +82,7 @@ export const Product = () => {
                         columns={1}
                         icon="flask-vial"
                         variant="solid"
-                        color="#8a5adf"
+                        color="var(--accent-properties)"
                     />
                 </section>
             </div>

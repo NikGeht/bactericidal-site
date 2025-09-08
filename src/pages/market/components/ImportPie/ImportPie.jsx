@@ -6,7 +6,7 @@ const data = [
     { name: 'Отечественное производство', value: 14 },
 ];
 
-const COLORS = ['rgb(42, 99, 156)', 'rgb(230, 130, 111)'];
+const COLORS = ['var(--primary-500)', 'var(--warning-500)'];
 
 export const ImportPie = () => {
     return (
@@ -19,7 +19,7 @@ export const ImportPie = () => {
                     cy="50%"
                     labelLine={true}
                     outerRadius={100}
-                    fill="rgb(42, 99, 156)"
+                    fill="var(--primary-500)"
                     dataKey="value"
                 >
                     {data.map((entry, index) => (
@@ -29,7 +29,11 @@ export const ImportPie = () => {
                         />
                     ))}
                 </Pie>
-                <Tooltip />
+                <Tooltip
+                    contentStyle={{
+                        backgroundColor: 'var(--bg-primary)',
+                    }}
+                />
                 <Legend />
             </PieChart>
         </div>

@@ -20,12 +20,14 @@ export const ProcurementBar = () => {
             <H3>Доля госзакупок</H3>
             <BarChart width={400} height={300} data={data}>
                 <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="name" />
-                <YAxis />
-                <Tooltip />
-                <Legend />
-                <Bar dataKey="percent1" name="%" fill="rgb(42, 99, 156)" />
-                <Bar dataKey="percent2" name="%" fill="rgb(230, 130, 111)" />
+                <XAxis dataKey="name" color="var(--text-primary)" />
+                <YAxis color="var(--text-primary)" />
+                <Tooltip
+                    contentStyle={{ backgroundColor: 'var(--bg-primary)' }}
+                />
+                <Legend color="var(--text-primary)" />
+                <Bar dataKey="percent1" name="%" fill="var(--primary-500)" />
+                <Bar dataKey="percent2" name="%" fill="var(--warning-500)" />
             </BarChart>
         </div>
     );

@@ -22,14 +22,16 @@ export const GrowthChart = () => {
             <H3>Рост рынка</H3>
             <LineChart width={500} height={300} data={data}>
                 <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="year" />
-                <YAxis />
-                <Tooltip />
-                <Legend />
+                <XAxis dataKey="year" color="var(--text-primary)" />
+                <YAxis color="var(--text-primary)" />
+                <Tooltip
+                    contentStyle={{ backgroundColor: 'var(--bg-primary)' }}
+                />
+                <Legend color="var(--text-primary)" />
                 <Line
                     type="linear"
                     dataKey="value"
-                    stroke="rgb(42, 99, 156)"
+                    stroke="var(--primary-500)"
                     name="млрд ₽"
                 />
             </LineChart>

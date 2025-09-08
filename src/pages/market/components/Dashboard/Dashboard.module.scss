@@ -1,7 +1,7 @@
 .dashboard {
     padding-top: 70px;
     margin-top: 10px;
-    background: #fff;
+    background: var(--bg-primary);
     min-height: fit-content;
     display: flex;
     flex-direction: column;
@@ -24,8 +24,8 @@
     height: 100%;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow-md);
     border-radius: 12px;
     padding: 16px;
-    background: #fff;
+    background: var(--bg-primary);
 }

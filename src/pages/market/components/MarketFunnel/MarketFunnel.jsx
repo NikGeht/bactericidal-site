@@ -12,16 +12,18 @@ export const MarketFunnel = () => {
         <div>
             <H3>Рынок</H3>
             <FunnelChart width={400} height={300}>
-                <Tooltip />
+                <Tooltip
+                    contentStyle={{ backgroundColor: 'var(--bg-primary)' }}
+                />
                 <Funnel
                     dataKey="value"
                     data={data}
                     isAnimationActive={false}
-                    fill="rgb(42, 99, 156)"
+                    fill="var(--primary-500)"
                 >
                     <LabelList
                         position="right"
-                        fill="#34495e"
+                        fill="var(--text-primary)"
                         stroke="none"
                         dataKey="name"
                         fontSize={12}
