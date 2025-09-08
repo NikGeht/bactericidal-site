@@ -12,13 +12,10 @@ export const MarketFunnel = () => {
         <div>
             <H3>Рынок</H3>
             <FunnelChart width={400} height={300}>
-                <Tooltip
-                    contentStyle={{ backgroundColor: 'var(--bg-primary)' }}
-                />
                 <Funnel
                     dataKey="value"
                     data={data}
-                    isAnimationActive={false}
+                    isAnimationActive={true}
                     fill="var(--primary-500)"
                 >
                     <LabelList
@@ -32,6 +29,10 @@ export const MarketFunnel = () => {
                         offset={20}
                     />
                 </Funnel>
+                <Tooltip
+                    wrapperClassName="recharts-tooltip-wrapper"
+                    contentClassName="recharts-tooltip-content"
+                />
             </FunnelChart>
         </div>
     );

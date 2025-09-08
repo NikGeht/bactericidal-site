@@ -1,0 +1,32 @@
+/* Custom tooltip styles for Recharts */
+.recharts-tooltip-wrapper {
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.recharts-tooltip-content {
+    background-color: var(--bg-primary) !important;
+    color: var(--text-primary) !important;
+    border: 1px solid var(--border-light) !important;
+    border-radius: 8px !important;
+    box-shadow: var(--shadow-md) !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+}
+
+.recharts-tooltip-label {
+    color: var(--text-primary) !important;
+    font-weight: 600 !important;
+}
+
+.recharts-tooltip-item {
+    color: var(--text-primary) !important;
+}
+
+.recharts-tooltip-item-name {
+    color: var(--text-secondary) !important;
+}
+
+.recharts-tooltip-item-value {
+    color: var(--text-primary) !important;
+    font-weight: 600 !important;
+}

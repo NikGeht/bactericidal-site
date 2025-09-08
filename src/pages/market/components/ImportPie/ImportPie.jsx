@@ -30,9 +30,8 @@ export const ImportPie = () => {
                     ))}
                 </Pie>
                 <Tooltip
-                    contentStyle={{
-                        backgroundColor: 'var(--bg-primary)',
-                    }}
+                    wrapperClassName="recharts-tooltip-wrapper"
+                    contentClassName="recharts-tooltip-content"
                 />
                 <Legend />
             </PieChart>

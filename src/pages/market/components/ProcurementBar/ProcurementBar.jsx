@@ -23,7 +23,8 @@ export const ProcurementBar = () => {
                 <XAxis dataKey="name" color="var(--text-primary)" />
                 <YAxis color="var(--text-primary)" />
                 <Tooltip
-                    contentStyle={{ backgroundColor: 'var(--bg-primary)' }}
+                    wrapperClassName="recharts-tooltip-wrapper"
+                    contentClassName="recharts-tooltip-content"
                 />
                 <Legend color="var(--text-primary)" />
                 <Bar dataKey="percent1" name="%" fill="var(--primary-500)" />
