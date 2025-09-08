@@ -1,12 +1,15 @@
 import './App.css';
+import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { Header } from './components/index.js';
-import { Home, Market, Problem, Product, Team } from './pages';
+import { Header } from './components';
+import { Home, Market, Problem, Product, Team, NotFound } from './pages';
 
 function App() {
+    const [isHeaderVisible, setIsHeaderVisible] = useState(true);
+
     return (
         <>
-            <Header />
+            {isHeaderVisible && <Header />}
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/problems" element={<Problem />} />
@@ -20,6 +23,12 @@ function App() {
                     element={<div>Благодарность</div>}
                 />
                 <Route path="/contacts" element={<div>Контакты</div>} />
+                <Route
+                    path="*"
+                    element={
+                        <NotFound setIsHeaderVisible={setIsHeaderVisible} />
+                    }
+                />
             </Routes>
         </>
     );
