@@ -10,6 +10,7 @@ import {
     Team,
     NotFound,
     Partners,
+    Contacts,
 } from './pages';
 
 function App() {
@@ -30,7 +31,7 @@ function App() {
                     path="/acknowledgments"
                     element={<div>Благодарность</div>}
                 />
-                <Route path="/contacts" element={<div>Контакты</div>} />
+                <Route path="/contacts" element={<Contacts />} />
                 <Route
                     path="*"
                     element={

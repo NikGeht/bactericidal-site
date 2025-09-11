@@ -1,5 +1,6 @@
 @import './styles/colors.css';
 @import './styles/tooltip.css';
+@import 'leaflet/dist/leaflet.css';
 
 :root {
     font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
