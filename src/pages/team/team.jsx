@@ -5,7 +5,7 @@ export const Team = () => {
     return (
         <div className={styles.container}>
             <H1>Наша команда</H1>
-            <Cards>
+            <div className={styles.cards}>
                 <Card
                     image={
                         'young-scientists-conducting-research-investigations-600nw-2149947783.jpg.webp'
@@ -36,7 +36,7 @@ export const Team = () => {
                     title={'Твердохлебов Сергей Иванович'}
                     text={`к.ф.– м.н., консультант.`}
                 />
-            </Cards>
+            </div>
         </div>
     );
 };

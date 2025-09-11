@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 export const NotFound = ({ setIsHeaderVisible }) => {
     useEffect(() => {
         setIsHeaderVisible(false);
-    }, []);
+    }, [setIsHeaderVisible]);
     const handleClick = () => {
         setIsHeaderVisible(true);
     };

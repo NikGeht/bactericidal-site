@@ -2,7 +2,15 @@ import './App.css';
 import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Header } from './components';
-import { Home, Market, Problem, Product, Team, NotFound } from './pages';
+import {
+    Home,
+    Market,
+    Problem,
+    Product,
+    Team,
+    NotFound,
+    Partners,
+} from './pages';
 
 function App() {
     const [isHeaderVisible, setIsHeaderVisible] = useState(true);
@@ -17,7 +25,7 @@ function App() {
                 <Route path="/product" element={<Product />} />
                 <Route path="/market" element={<Market />} />
                 <Route path="/team" element={<Team />} />
-                <Route path="/partners" element={<div>Партнеры</div>} />
+                <Route path="/partners" element={<Partners />} />
                 <Route
                     path="/acknowledgments"
                     element={<div>Благодарность</div>}
