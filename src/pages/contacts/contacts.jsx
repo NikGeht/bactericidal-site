@@ -33,11 +33,11 @@ export const Contacts = () => {
                     </a>
                     <H3>Email</H3>
                     <a
-                        href="mailto:info@example.com"
+                        href="mailto:vsb27@tpu.ru"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        info@exam ple.com
+                        vsb27@tpu.ru
                     </a>
                 </div>
                 <div className={styles.rightSide}>
