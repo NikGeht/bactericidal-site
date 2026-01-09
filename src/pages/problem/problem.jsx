@@ -1,6 +1,7 @@
 import styles from './problem.module.scss';
 import { Card, H1, H3 } from '../../components/index.js';
 import { Cards } from '../../components/Cards/Cards.jsx';
+import { Footer } from '../../components/footer/Footer.jsx';
 
 export const Problem = () => {
     return (
@@ -36,6 +37,7 @@ export const Problem = () => {
                     />
                 </Cards>
             </div>
+            <Footer />
         </div>
     );
 };

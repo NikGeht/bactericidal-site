@@ -1,9 +1,11 @@
 import { H1 } from '../../../../components';
+import { Footer } from '../../../../components/footer/Footer.jsx';
 import {
     MarketFunnel,
     GrowthChart,
     ImportPie,
     ProcurementBar,
+    SimpleRadialBarChart,
 } from '../index.js';
 
 import styles from './Dashboard.module.scss';
@@ -31,6 +33,7 @@ export const Dashboard = () => {
                         </div>
                     </div>
                 </div>
+                <Footer />
             </div>
         </>
     );

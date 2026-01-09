@@ -56,3 +56,13 @@
     flex: 1 1 auto;
     height: 100px;
 }
+
+.cardItemContacts {
+    font-size: 14px;
+    color: var(--text-muted);
+    display: -webkit-box;
+    line-clamp: 999;
+    -webkit-line-clamp: 999;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}

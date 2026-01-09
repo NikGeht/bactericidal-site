@@ -1,4 +1,5 @@
 import { H1, FeatureList } from '../../components';
+import { Footer } from '../../components/footer/Footer';
 import styles from './product.module.scss';
 
 const productFeatures = {
@@ -86,6 +87,7 @@ export const Product = () => {
                     />
                 </section>
             </div>
+            <Footer />
         </div>
     );
 };

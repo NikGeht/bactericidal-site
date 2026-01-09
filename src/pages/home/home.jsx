@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import styles from './home.module.scss';
 import { H1, H3 } from '../../components/index.js';
+import { Footer } from '../../components/footer/Footer.jsx';
 
 export const Home = () => {
     return (
@@ -15,6 +16,7 @@ export const Home = () => {
                     Узнать больше
                 </Link>
             </div>
+            <Footer />
         </div>
     );
 };

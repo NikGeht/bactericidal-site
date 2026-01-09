@@ -2,6 +2,7 @@ import { H1, H3 } from '../../components';
 import styles from './contacts.module.scss';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import { useState, useEffect } from 'react';
+import { Footer } from '../../components/footer/Footer.jsx';
 export const Contacts = () => {
     const [map, setMap] = useState(null);
     useEffect(() => {
@@ -36,7 +37,7 @@ export const Contacts = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        info@example.com
+                        info@exam ple.com
                     </a>
                 </div>
                 <div className={styles.rightSide}>
@@ -51,6 +52,7 @@ export const Contacts = () => {
                                     borderRadius: 12,
                                 }}
                                 zoomControl={false}
+                                attributionControl={true}
                             >
                                 <TileLayer
                                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -72,6 +74,7 @@ export const Contacts = () => {
                     )}
                 </div>
             </div>
+            <Footer />
         </div>
     );
 };

@@ -29,3 +29,8 @@
     width: 100%;
     height: 420px;
 }
+
+:global(.leaflet-control-attribution a svg),
+:global(.leaflet-control-attribution .leaflet-attribution-logo) {
+    display: none !important;
+}
