@@ -92,7 +92,7 @@ export const Header = () => {
                                         Партнеры
                                     </NavLink>
                                 </li>
-                                <li className={styles.navItem}>
+                                {/* <li className={styles.navItem}>
                                     <NavLink
                                         to="/acknowledgments"
                                         className={({ isActive }) =>
@@ -107,7 +107,7 @@ export const Header = () => {
                                     >
                                         Благодарность
                                     </NavLink>
-                                </li>
+                                </li> */}
                                 <li className={styles.navItem}>
                                     <NavLink
                                         to="/contacts"

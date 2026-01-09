@@ -17,19 +17,19 @@ export const Contacts = () => {
                     <p>ООО "Антибактериум"</p>
                     <H3>Адрес</H3>
                     <a
-                        href="https://yandex.ru/maps/216/zelenograd/?indoorLevel=1&ll=37.173329%2C55.978468&mode=whatshere&whatshere%5Bpoint%5D=37.173094%2C55.978573&whatshere%5Bzoom%5D=16.87&z=16.87"
+                        href="https://yandex.com/maps/-/CLXdu2Jn"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        123456, г. Москва, ул. Ленина, д. 1
+                        634050, г. Томск, пр. Ленина, д. 30
                     </a>
                     <H3>Телефон</H3>
                     <a
-                        href="tel:+79999999999"
+                        href="tel:+79135754070"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        +7 (999) 999-99-99
+                        +7 (913) 575-40-70
                     </a>
                     <H3>Email</H3>
                     <a
@@ -44,7 +44,7 @@ export const Contacts = () => {
                     {map && (
                         <div className={styles.mapContainer}>
                             <MapContainer
-                                center={[55.97857, 37.17309]}
+                                center={[56.46539, 84.950164]}
                                 zoom={16}
                                 style={{
                                     height: 400,
@@ -58,14 +58,14 @@ export const Contacts = () => {
                                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                                     attribution="&copy; OpenStreetMap contributors"
                                 />
-                                <Marker position={[55.97857, 37.17309]}>
+                                <Marker position={[56.46539, 84.950164]}>
                                     <Popup>
-                                        <H3>ООО "Антибактериум"</H3>
+                                        <h3>ООО "Антибактериум"</h3>
                                         <p>
-                                            123456, г. Москва, ул. Ленина, д. 1
+                                            634050, г. Томск, пр. Ленина, д. 30
                                         </p>
-                                        <a href="tel:+79999999999">
-                                            +7 (999) 999-99-99
+                                        <a href="tel:+79135754070">
+                                            +7 (913) 575-40-70
                                         </a>
                                     </Popup>
                                 </Marker>
